@@ -20,17 +20,10 @@ function getUniqueWordCount(text) {
   var words       = text;
   var uniqueArray = [];
   for (var i = 0; i < words.length; i++) {
-    /* FIX THIS!!! DOES NOT CHECK CORRECTLY
-    console.log(words[i]+" Whaat the word is");
-    if(words.includes(words[i])){
-      console.log(words[i] + " Inside if");
-    }
-    else{
+    if(!(uniqueArray.includes(words[i]))){
       uniqueArray.push(words[i]);
-      console.log(uniqueArray + " Check array");
     }
-  }*/
-  console.log(uniqueArray);
+  }
 	$('.js-uc').append(uniqueArray.length);
 }
 
